@@ -2,28 +2,26 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - A Pen by romanvesely</title>
+  <title>Wie schlimm ist es heute...?</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
+
 <div class="rate">
-  <div class="titel">Ich fühle mich eher so...</div>
+  <div class="titel">Wie schlimm ist es heute...?</div>
   <div class="emoji"></div>
   <input
     type="range"
+    on-tap="onTap($event)"
+    ng-model="barProgress" 
     min="0"
     max="19"
     step="1"
-    id="temp"
-    name="temp"
     list="tickmarks"
   />
-
-  <datalist id="tickmarks"> </datalist>
 </div>
-<!-- partial -->
+
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script><script  src="./script.js"></script>
 
 </body>
