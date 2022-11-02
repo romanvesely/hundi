@@ -1,0 +1,41 @@
+body {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="range"] {
+  width: 600px;
+  margin: 0;
+}
+
+datalist {
+  font-size: 24pt;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  writing-mode: vertical-lr;
+  width: 600px;
+}
+
+option {
+  padding: 0;
+  text-align: left;
+}
+
+.rate {
+  text-align: center;
+  width: 600px;
+  height: 200px;
+}
+.emoji {
+  font-size: 180px;
+  height: 220px;
+  line-height: 170px;
+}
+.titel {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24pt;
+  margin-bottom: 60px;
+}
