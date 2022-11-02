@@ -7,23 +7,12 @@
   </head>
   <body>
     <div class="rate">
-      <div class="titel">Wie schlimm ist es heute...?</div>
-      <div class="emoji"></div>
-      <input
-        type="range"
-        #seeker
-        (ionBlur)="“positionPress($event,"
-        seeker.value)”
-        [(ngModel)]="“positionbar”"
-        ng-model="barProgress"
-        min="0"
-        max="19"
-        step="1"
-        list="tickmarks"
-      />
+      <div class="emoji">😑</div>
+      <input type="range" min="0" max="19" step="1">
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
