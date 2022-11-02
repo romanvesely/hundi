@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Wie schlimm ist es heute...?</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
-    <div class="rate">
-      <div class="emoji">😑</div>
-      <input type="range" min="0" max="19" step="1">
+  <body>   
+  <div class="rate">
+    <div class="emoji"></div>
+
+    <div class="slidecontainer">
+      <input
+        type="range"
+        min="0"
+        max="19"
+        value="10"
+        class="slider"
+        id="myRange"
+      />
     </div>
 
+    <script>
+      var slider = document.getElementById("myRange");
+      var output = document.getElementById("demo");
+      output.innerHTML = slider.value;
+
+      slider.oninput = function () {
+        output.innerHTML = this.value;
+      };
+    </script>
+
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
