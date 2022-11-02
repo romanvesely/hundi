@@ -1,28 +1,29 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Wie schlimm ist es heute...?</title>
-  <link rel="stylesheet" href="./style.css">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Wie schlimm ist es heute...?</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="rate">
+      <div class="titel">Wie schlimm ist es heute...?</div>
+      <div class="emoji"></div>
+      <input
+        type="range"
+        #seeker
+        (ionBlur)="“positionPress($event,"
+        seeker.value)”
+        [(ngModel)]="“positionbar”"
+        ng-model="barProgress"
+        min="0"
+        max="19"
+        step="1"
+        list="tickmarks"
+      />
+    </div>
 
-</head>
-<body>
-
-<div class="rate">
-  <div class="titel">Wie schlimm ist es heute...?</div>
-  <div class="emoji"></div>
-  <input
-    type="range"
-    on-tap="onTap($event)"
-    ng-model="barProgress" 
-    min="0"
-    max="19"
-    step="1"
-    list="tickmarks"
-  />
-</div>
-
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script><script  src="./script.js"></script>
-
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>
